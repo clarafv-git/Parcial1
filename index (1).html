@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!--
+    Portfolio — Clara Fernández Villegas
+    Licenciatura en Diseño (CCC) · Universidad Provincial de Córdoba
+    Laboratorio Digital 2026 · Comisión 2 · Prof. Pagola
+-->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Clara Fernández Villegas, diseñadora gráfica y maquilladora profesional de Córdoba, Argentina.">
+    <meta name="author" content="Clara Fernández Villegas">
+
+    <title>Clara Fernández Villegas · Diseño Gráfico</title>
+
+    <!-- Hoja de estilos EXTERNA (requisito 2) -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--
+        Licencia CC BY 4.0 declarada semánticamente en el <head> (requisito 8)
+        <link rel="license"> es el estándar HTML para indicar la licencia de la página.
+    -->
+    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+</head>
+
+<body>
+
+    <!-- ══════════════════════════════════════════════════════
+         HEADER
+         ══════════════════════════════════════════════════════ -->
+    <header class="site-header">
+        <p class="header-kicker">Portfolio · Diseño Gráfico</p>
+
+        <!-- h1: título principal de la página (requisito 2) -->
+        <h1>Clara Fernández Villegas</h1>
+
+        <p class="header-desc">
+            Diseñadora gráfica en formación · Maquilladora profesional · Córdoba, Argentina
+        </p>
+    </header>
+
+    <!-- ══════════════════════════════════════════════════════
+         NAVEGACIÓN — enlace interno a media.html (requisito 10)
+         ══════════════════════════════════════════════════════ -->
+    <nav class="site-nav" aria-label="Navegación del sitio">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="media.html">🎵 Audiovisual</a>
+    </nav>
+
+    <!-- ══════════════════════════════════════════════════════
+         CONTENIDO PRINCIPAL
+         ══════════════════════════════════════════════════════ -->
+    <main>
+
+        <!-- ── Sobre mí ─────────────────────────────────────── -->
+
+        <!-- h2: subtítulo de sección con estilos CSS definidos en styles.css (requisito 2) -->
+        <h2>Sobre mí</h2>
+
+        <!--
+            TEXTO OPTIMIZADO PARA PANTALLA (requisito 4)
+            Criterios de Nielsen aplicados:
+            · Lead box al inicio: idea principal en 2 líneas
+            · Párrafos cortos con máximo 3 oraciones
+            · Ancho limitado a 65ch (~65 caracteres por línea)
+            · Tipografía sans-serif para el cuerpo (Nunito, redondeada y legible)
+            · Sin subrayado en texto corrido
+        -->
+        <div class="lead-box">
+            <!-- p: párrafo dentro del lead box (requisito 2) -->
+            <p>
+                Soy <strong>Clara Fernández Villegas</strong>, maquilladora profesional y estudiante de la
+                <strong>Licenciatura en Diseño (CCC)</strong> en la Universidad Provincial de Córdoba.
+                Combino dos disciplinas creativas que hablan el mismo idioma: la imagen.
+            </p>
+        </div>
+
+        <!-- p: párrafos de presentación (requisito 2) -->
+        <p>
+            Mi interés en el diseño nació de la mano del maquillaje: ambos trabajan con el color,
+            la composición y la comunicación visual. Hoy estoy formándome para llevar esa sensibilidad
+            al diseño gráfico, la ilustración y las piezas audiovisuales.
+        </p>
+
+        <p>
+            Me apasionan los <strong>colores</strong>, la <strong>ilustración</strong> y los
+            <strong>motion graphics</strong>. Creo que el diseño tiene el poder de transformar
+            una idea en algo que la gente realmente siente.
+        </p>
+
+        <!-- ── Imagen (requisitos 5 y 7) ──────────────────── -->
+        <div class="img-bloque">
+            <!--
+                IMAGEN DE WIKIMEDIA COMMONS — alta calidad, licencia libre (requisito 5)
+
+                ¿POR QUÉ ESTA URL?
+                Las imágenes de Wikimedia Commons pueden fallar si se usa la URL
+                de la página del archivo (/wiki/File:...) en lugar de la URL directa
+                del archivo de imagen. La URL correcta es la del archivo en sí:
+                https://upload.wikimedia.org/wikipedia/commons/...
+
+                Esta imagen es una ilustración vectorial de una paleta de colores,
+                temáticamente relacionada con diseño gráfico y color.
+                Autor: Rezonansowy · Licencia: CC BY-SA 4.0
+            -->
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Palette_of_125_main_colors_with_RGB_components_divisible_by_64.gif/640px-Palette_of_125_main_colors_with_RGB_components_divisible_by_64.gif"
+                alt="Paleta de 125 colores principales con componentes RGB, ilustración de referencia para diseño gráfico"
+                width="700"
+                height="260"
+                loading="lazy"
+            >
+            <!--
+                ATRIBUCIÓN DE LA IMAGEN (requisito 7)
+                Toda imagen de Creative Commons requiere: autor, título, fuente y licencia.
+            -->
+            <p class="img-atribucion">
+                Imagen: <em>Palette of 125 main colors with RGB components divisible by 64</em> ·
+                Autor: Rezonansowy ·
+                Fuente: <a href="https://commons.wikimedia.org/wiki/File:Palette_of_125_main_colors_with_RGB_components_divisible_by_64.gif" target="_blank" rel="noopener">Wikimedia Commons</a> ·
+                <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>
+            </p>
+        </div>
+
+        <!-- ── Formación ─────────────────────────────────── -->
+        <h2>Formación</h2>
+
+        <p>
+            Actualmente curso la <strong>Licenciatura en Diseño (Ciclo de Complementación Curricular)</strong>
+            en la Universidad Provincial de Córdoba (UPC), con orientación en Gráfica.
+        </p>
+
+        <p>
+            A esto sumo mi trayectoria como <strong>maquilladora profesional</strong>, disciplina en la que
+            trabajo hace años y que me entrenó en el uso del color, la composición y la comunicación
+            a través de la imagen.
+        </p>
+
+        <!-- ── Intereses ──────────────────────────────────── -->
+        <h2>Intereses y áreas de trabajo</h2>
+
+        <p>
+            Mis áreas de mayor interés dentro del diseño son la <strong>ilustración</strong>,
+            el <strong>diseño de identidad visual</strong> y los <strong>motion graphics</strong>.
+            También exploro la intersección entre el maquillaje artístico y el diseño gráfico
+            como lenguajes visuales complementarios.
+        </p>
+
+        <!-- ── Referentes ─────────────────────────────────── -->
+        <h2>Referentes argentinos</h2>
+
+        <p>Algunos diseñadores e ilustradores locales que me inspiran:</p>
+
+        <div class="referentes-grid">
+
+            <div class="ref-card">
+                <h3>Pablo Bernasconi</h3>
+                <p>
+                    Diseñador e ilustrador argentino, egresado de la UBA. Su técnica de collage conceptual
+                    lo llevó a publicar en The New York Times, Rolling Stone y medios de todo el mundo.
+                </p>
+                <!--
+                    a: enlace externo con href, target="_blank" y rel="noopener" (requisito 2 y 6)
+                    El estilo del enlace (color, hover, visited) está definido en styles.css
+                -->
+                <a href="https://www.pablobernasconi.com.ar/" target="_blank" rel="noopener noreferrer">
+                    Ver portfolio →
+                </a>
+            </div>
+
+            <div class="ref-card">
+                <h3>Isol (Marisol Misenta)</h3>
+                <p>
+                    Ilustradora y escritora porteña con un estilo inconfundible: colores planos,
+                    ironía y una línea gráfica que mezcla lo pictórico con el cómic de autor.
+                </p>
+                <a href="https://es.wikipedia.org/wiki/Isol" target="_blank" rel="noopener noreferrer">
+                    Más sobre Isol →
+                </a>
+            </div>
+
+            <div class="ref-card">
+                <h3>Margarita Cubino</h3>
+                <p>
+                    Ilustradora argentina y parte del estudio de motion graphics <em>Dosve</em>.
+                    Referente local en animación de ilustraciones y diseño con color y energía.
+                </p>
+                <a href="https://www.domestika.org/es/blog/269-15-ilustradoras-argentinas-que-debes-conocer" target="_blank" rel="noopener noreferrer">
+                    Ver referencia →
+                </a>
+            </div>
+
+        </div>
+
+        <!-- ── Redes y blog (requisito 6) ────────────────── -->
+        <h2>Encontrame en</h2>
+
+        <ul class="redes-lista">
+            <!--
+                a: enlaces externos a redes y blog personal (requisito 6)
+                Los estilos de estado normal, :hover, :visited y :active están en styles.css
+            -->
+            <li>
+                <a href="https://unpocodeclari.wordpress.com/" target="_blank" rel="noopener noreferrer">
+                    📝 Blog
+                </a>
+            </li>
+            <li>
+                <a href="https://www.behance.net/clarafernndez1" target="_blank" rel="noopener noreferrer">
+                    Behance ↗
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/clarifernandezmakeup/" target="_blank" rel="noopener noreferrer">
+                    Instagram ↗
+                </a>
+            </li>
+            <li>
+                <a href="media.html">
+                    🎵 Audiovisual →
+                </a>
+            </li>
+        </ul>
+
+        <!-- ══════════════════════════════════════════════════
+             LICENCIA Creative Commons BY 4.0 (requisito 8)
+
+             La licencia CC BY es DISTINTA al copyright tradicional:
+             · Copyright "todos los derechos reservados" → nadie puede usar la obra sin permiso.
+             · CC BY 4.0 → cualquier persona puede compartir y adaptar la obra, incluso
+               comercialmente, con la única condición de dar atribución a la autora.
+
+             Está embebida de tres maneras:
+             1. <link rel="license"> en el <head> (semántica HTML)
+             2. Bloque visual con imagen oficial de CC (visibilidad para el usuario)
+             3. Texto legal con enlace al texto completo de la licencia
+             ══════════════════════════════════════════════════ -->
+        <div class="licencia">
+            <img
+                src="https://licensebuttons.net/l/by/4.0/88x31.png"
+                alt="Licencia Creative Commons Atribución 4.0 Internacional"
+            >
+            <p>
+                Esta obra de <strong>Clara Fernández Villegas</strong> está bajo una
+                <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">
+                    Licencia Creative Commons Atribución 4.0 Internacional (CC BY 4.0)
+                </a>.
+                Podés compartir y adaptar el material para cualquier propósito, incluso comercial,
+                siempre que atribuyas la autoría correctamente.
+            </p>
+        </div>
+
+    </main>
+
+    <!-- ══════════════════════════════════════════════════════
+         FOOTER
+         ══════════════════════════════════════════════════════ -->
+    <footer>
+        <p>
+            © 2026 Clara Fernández Villegas ·
+            <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>
+            · Laboratorio Digital · Prof. Pagola · UPC Córdoba
+        </p>
+    </footer>
+
+</body>
+</html>

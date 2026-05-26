@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!--
+    Página 2: Audiovisual — Clara Fernández Villegas
+    Laboratorio Digital 2026 · Comisión 2 · Prof. Pagola
+-->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Clara Fernández Villegas">
+
+    <title>Audiovisual · Clara Fernández Villegas</title>
+
+    <!-- Hoja de estilos EXTERNA compartida con index.html (requisito 2) -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Licencia CC BY 4.0 (requisito 8) -->
+    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+</head>
+
+<body>
+
+    <!-- ══════════════════════════════════════════════════════
+         HEADER
+         ══════════════════════════════════════════════════════ -->
+    <header class="site-header">
+        <p class="header-kicker">Portfolio · Audiovisual</p>
+
+        <!-- h1: título de esta página (requisito 2) -->
+        <h1>Lo que escucho y me inspira</h1>
+
+        <p class="header-desc">
+            Música, emociones y referencias visuales que forman parte de mi proceso creativo
+        </p>
+    </header>
+
+    <!-- ══════════════════════════════════════════════════════
+         NAVEGACIÓN — enlace de vuelta a index.html (requisito 10)
+         ══════════════════════════════════════════════════════ -->
+    <nav class="site-nav" aria-label="Navegación del sitio">
+        <!--
+            a: enlace interno de regreso (requisito 10 — navegación de ida y vuelta)
+            href="index.html" → mismo directorio, sin rutas absolutas
+        -->
+        <a href="index.html">← Inicio</a>
+        <a href="media.html" class="active">🎵 Audiovisual</a>
+    </nav>
+
+    <!-- ══════════════════════════════════════════════════════
+         CONTENIDO PRINCIPAL
+         ══════════════════════════════════════════════════════ -->
+    <main>
+
+        <!-- ── Sobre Olivia Rodrigo ──────────────────────── -->
+
+        <!-- h2: subtítulo de sección con estilos CSS definidos (requisito 2) -->
+        <h2>Olivia Rodrigo</h2>
+
+        <!--
+            TEXTO OPTIMIZADO PARA PANTALLA (requisito 4)
+            Párrafos cortos, lead box al inicio, tipografía Nunito (sans-serif legible)
+        -->
+        <div class="lead-box">
+            <!-- p: párrafo de presentación (requisito 2) -->
+            <p>
+                <strong>Olivia Rodrigo</strong> es una de mis artistas favoritas. Lo que más me llega
+                de ella es su capacidad de poner en palabras exactamente lo que sentimos pero no
+                podemos decir: me hace sentir identificada con cada canción.
+            </p>
+        </div>
+
+        <p>
+            Su música mezcla el pop con el rock alternativo de una forma que se siente auténtica
+            y sin filtros. Habla de sus emociones —el desamor, la rabia, la confusión, la alegría—
+            con una honestidad que es difícil de encontrar.
+        </p>
+
+        <p>
+            Como diseñadora, también me inspira visualmente: la estética de sus videos, sus portadas
+            de álbumes y su identidad de marca tienen una coherencia visual muy fuerte que me parece
+            un gran ejemplo de cómo la música y el diseño gráfico pueden ir de la mano.
+        </p>
+
+        <!-- ── Video embebido (requisito 9) ──────────────── -->
+
+        <!-- h2: subtítulo de la sección del video (requisito 2) -->
+        <h2>Video destacado</h2>
+
+        <!--
+            VIDEO DE YOUTUBE EMBEBIDO (requisito 9)
+            URL original compartida: https://youtu.be/78wrful9cVU
+
+            El <iframe> de YouTube:
+            · src: URL en formato /embed/ (no /watch?v=) para poder embeber
+            · title: obligatorio para accesibilidad (lectores de pantalla)
+            · allow: permisos mínimos necesarios para el reproductor
+            · allowfullscreen: permite pantalla completa al usuario
+            · loading="lazy": carga diferida, mejora el rendimiento de la página
+
+            El div.video-wrapper mantiene proporción 16:9 de forma responsive:
+            padding-bottom: 56.25% = 9 / 16 × 100%
+        -->
+        <div class="video-wrapper">
+            <iframe
+                src="https://www.youtube.com/embed/78wrful9cVU"
+                title="Olivia Rodrigo — video musical seleccionado por Clara Fernández Villegas"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+            ></iframe>
+        </div>
+
+        <!--
+            ATRIBUCIÓN DEL VIDEO (requisito 7)
+            Se debe indicar el autor/canal del contenido y la plataforma.
+            El uso es educativo y sin fines comerciales.
+        -->
+        <p class="video-atribucion">
+            Video: <strong>Olivia Rodrigo</strong> ·
+            Canal oficial en
+            <a href="https://www.youtube.com/@OliviaRodrigo" target="_blank" rel="noopener noreferrer">YouTube</a> ·
+            Enlace original:
+            <a href="https://youtu.be/78wrful9cVU" target="_blank" rel="noopener noreferrer">youtu.be/78wrful9cVU</a> ·
+            Todos los derechos del contenido audiovisual pertenecen a sus respectivos autores.
+            Uso con fines educativos y no comerciales.
+        </p>
+
+        <!-- ── Por qué me inspira ────────────────────────── -->
+        <h2>¿Por qué me inspira?</h2>
+
+        <p>
+            La música siempre fue para mí una fuente de referencias visuales y emocionales.
+            Cuando escucho a Olivia, pienso en paletas de colores, en tipografías expresivas,
+            en la forma en que una canción puede tener una identidad visual tan fuerte como
+            una marca.
+        </p>
+
+        <p>
+            Como diseñadora y maquilladora, trabajo constantemente con la idea de que
+            una composición —ya sea gráfica o en un rostro— puede contar una historia
+            sin palabras. Ese es exactamente el lenguaje de Olivia Rodrigo.
+        </p>
+
+        <!-- ── Navegación de vuelta (requisito 10) ────────── -->
+        <h2>Seguí explorando</h2>
+
+        <ul class="redes-lista">
+            <li>
+                <!--
+                    a: enlace interno de regreso a index.html (requisito 10)
+                    href sin http → ruta relativa al mismo directorio
+                -->
+                <a href="index.html">← Volver al inicio</a>
+            </li>
+            <li>
+                <a href="https://unpocodeclari.wordpress.com/" target="_blank" rel="noopener noreferrer">
+                    📝 Mi blog
+                </a>
+            </li>
+            <li>
+                <a href="https://www.behance.net/clarafernndez1" target="_blank" rel="noopener noreferrer">
+                    Behance ↗
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/clarifernandezmakeup/" target="_blank" rel="noopener noreferrer">
+                    Instagram ↗
+                </a>
+            </li>
+        </ul>
+
+        <!-- ── Licencia (requisito 8) ─────────────────────── -->
+        <div class="licencia">
+            <img
+                src="https://licensebuttons.net/l/by/4.0/88x31.png"
+                alt="Licencia Creative Commons Atribución 4.0 Internacional"
+            >
+            <p>
+                Esta obra de <strong>Clara Fernández Villegas</strong> está bajo una
+                <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">
+                    Licencia Creative Commons Atribución 4.0 Internacional (CC BY 4.0)
+                </a>.
+                El contenido audiovisual embebido pertenece a sus respectivos autores
+                y se usa con fines educativos.
+            </p>
+        </div>
+
+    </main>
+
+    <!-- ══════════════════════════════════════════════════════
+         FOOTER
+         ══════════════════════════════════════════════════════ -->
+    <footer>
+        <p>
+            © 2026 Clara Fernández Villegas ·
+            <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>
+            · Laboratorio Digital · Prof. Pagola · UPC Córdoba
+        </p>
+    </footer>
+
+</body>
+</html>
